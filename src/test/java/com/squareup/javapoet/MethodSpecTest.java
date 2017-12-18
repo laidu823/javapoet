@@ -161,6 +161,7 @@ public final class MethodSpecTest {
         + "}\n");
   }
 
+
   @Test public void overrideExtendsOthersWorksWithActualTypeParameters() {
     TypeElement classElement = getElement(ExtendsOthers.class);
     DeclaredType classType = (DeclaredType) classElement.asType();
