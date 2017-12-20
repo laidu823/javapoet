@@ -155,6 +155,8 @@ public final class MethodSpecTest {
     assume().that(Util.DEFAULT).isNotNull();
     exec = findFirst(methods, "spliterator");
     MethodSpec method = MethodSpec.overriding(exec, classType, types).build();
+
+    System.out.println(method.toString());
     assertThat(method.toString()).isEqualTo(""
         + "@java.lang.Override\n"
         + "public java.util.Spliterator<java.lang.Object> spliterator() {\n"
